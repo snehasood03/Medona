@@ -1,0 +1,126 @@
+#sidebar p
+{
+	margin-top:40px;
+	margin-bottom: 40px;
+	padding: 40px;
+	border: 2px solid black;
+	background-color: #008ae6;
+	color: black;
+}
+#sidebar p:hover
+{
+	background-color: #99d6ff;
+}
+#sidebar a:hover
+{
+	text-decoration: none;
+}
+.about-us 
+{
+	margin-top:40px;
+	margin-bottom: 40px;
+	padding: 50px;
+}
+h1
+{
+	font-size:30px;
+	color:white
+}
+.pos1
+{
+	position: absolute;
+	top: 20%; 
+	right:20px;
+}
+.pos2
+{
+	position: absolute;
+	bottom: 20%;
+	right: 20px;
+}
+.login
+{
+	background-color: #80ccff;
+	font-size: 16px;
+	text-decoration: bold;
+}
+.login:hover
+{
+	background-color:#000000;
+	color:#ffffff;
+}
+.contact1
+{
+	color:white;
+	position: absolute;
+	top:20%;
+	left: 50%;
+}
+.contact2
+{
+	color:white;
+	position: absolute;
+	top:40%;
+	left: 50%;
+}
+.contact2 span:hover
+{
+	color: white;
+	background-color: black;
+	text-decoration: none;
+}
+.foot
+{
+	background-color: #006bb3;
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	color:white;
+	text-align: center;}
+.butn2 
+{
+	background-color: black;
+}
+.butn2 a
+{
+	color: white;
+}
+.butn2:hover
+{
+	background-color: #99d6ff;
+	text-decoration: none;
+}
+.butn2 a:hover
+{
+	color: black;
+}
+body
+{
+  background-image:url(https://cdn3.vectorstock.com/i/1000x1000/91/72/medicine-and-science-concept-background-vector-22849172.jpg); 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; 
+}
+#header-nav
+{
+	background-color: #006bb3
+}
+#nav-list {
+	margin-top: 60px;
+}
+#nav-list a
+{
+	color: white;
+	border: 1px white; 
+	box-shadow: 1px white;
+}
+#nav-list a:hover
+{
+	background-color: #99d6ff;
+	color: black;
+}
+h3
+{
+	margin-top: -5px;
+	color:black;
+}
