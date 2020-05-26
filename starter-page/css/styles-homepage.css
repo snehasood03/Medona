@@ -76,7 +76,8 @@ h1
 	width: 100%;
 	bottom: 0;
 	color:white;
-	text-align: center;}
+	text-align: center;
+}
 .butn2 
 {
 	background-color: black;
@@ -88,7 +89,6 @@ h1
 .butn2:hover
 {
 	background-color: #99d6ff;
-	text-decoration: none;
 }
 .butn2 a:hover
 {
@@ -123,4 +123,23 @@ h3
 {
 	margin-top: -5px;
 	color:black;
+}
+.next-btn
+{
+	position: absolute;
+	right:100px;
+	bottom: 100px;
+	background-color: black;
+}
+.next-btn:hover
+{
+	background-color: #99d6ff;
+}
+.next-btn a
+{
+	color: white;
+}
+.next-btn a:hover
+{
+	color: black;
 }
