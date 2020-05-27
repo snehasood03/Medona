@@ -1,11 +1,15 @@
+body,h1,h2,h3,h4,h5,h6
+{font-family:"lato",sans-serif}
 #sidebar p
 {
-	margin-top:40px;
-	margin-bottom: 40px;
-	padding: 40px;
+	margin-top:58px;
+	margin-bottom: 50px;
+	padding: 20px 10px;
+	border-radius: 10px;
 	border: 2px solid black;
 	background-color: #008ae6;
 	color: black;
+	font-size: 25px;
 }
 #sidebar p:hover
 {
@@ -16,10 +20,22 @@
 	text-decoration: none;
 }
 .about-us 
-{
-	margin-top:40px;
-	margin-bottom: 40px;
+{	
 	padding: 50px;
+}
+.about-us p
+{
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 40px;
+
+}
+.about-us h2
+{
+	font-size: 40px;
+	font-weight: bold;
+	margin-bottom: 30px;
+	margin-top:20px;
 }
 h1
 {
@@ -47,21 +63,21 @@ h1
 .login:hover
 {
 	background-color:#000000;
-	color:#ffffff;
+	color: #ffffff;
 }
 .contact1
 {
-	color:white;
+	color: white;
 	position: absolute;
 	top:20%;
-	left: 50%;
+	left:60%;
 }
 .contact2
 {
-	color:white;
+	color: white;
 	position: absolute;
 	top:40%;
-	left: 50%;
+	left:60%;
 }
 .contact2 span:hover
 {
@@ -124,22 +140,110 @@ h3
 	margin-top: -5px;
 	color:black;
 }
-.next-btn
-{
-	position: absolute;
-	right:100px;
-	bottom: 100px;
-	background-color: black;
+.button {
+  border-radius: 4px;
+  background-color: #004d80;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  padding: 15px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  position: absolute;
+  right: 30px;
+  bottom: 90px;
 }
-.next-btn:hover
-{
-	background-color: #99d6ff;
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
 }
-.next-btn a
-{
-	color: white;
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
 }
-.next-btn a:hover
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+@media(max-width: 768px)
 {
-	color: black;
+    #header-nav
+    {
+    	height: 140px;
+    }
+    .navbar-brand
+    {
+    	position: absolute;
+    	left: 120px;
+    }
+}
+.sidebar {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+/* The sidebar links */
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s; /* If you want a transition effect */
 }
